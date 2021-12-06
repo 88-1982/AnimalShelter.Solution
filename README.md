@@ -2,9 +2,10 @@
 ## Description 
 This application simulates an animal shelter database API. You can use enpoints to call animals where you can query over species to find either a cat or a dog. An example:
 
-GET /api/Animals/?species=dog
 
-This project also utilizes full swagger documentation which you can see at the below.
+
+
+
 
 ## Setup/Installation Requirements
 1. Clone repository
@@ -13,6 +14,23 @@ This project also utilizes full swagger documentation which you can see at the b
 4. Then, run the command 'dotnet ef database update' to run the migration. If everything works, you should be able to see the animalshelter schema in your MySql workbench.
 5. Next, use command 'dotnet run' in your terminal to run server
 6. Copy the local host 5000 server link into Postman or perferred web browser to see seeded example data
+## Api EndPoints
+GET: api/Animals
+POST: api/animals
+GET: api/Animals/1{id}
+PUT: api/Animals/1{id}
+Code Block from Postman
+```[
+    {
+        "animalId": 1,
+        "name": "Orion",
+        "species": "Cat",
+        "family": "SavannahCat",
+        "age": 8,
+        "markings": "Black/Brown/Spotted"
+    },
+    
+]```
 ## Technologies Used
 C#
 MySql
