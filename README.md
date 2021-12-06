@@ -14,6 +14,7 @@ This application simulates an animal shelter database API. You can use enpoints 
 4. Then, run the command 'dotnet ef database update' to run the migration. If everything works, you should be able to see the animalshelter schema in your MySql workbench.
 5. Next, use command 'dotnet run' in your terminal to run server
 6. Copy the local host 5000 server link into Postman or perferred web browser to see seeded example data
+
 ## Api EndPoints
 GET: api/Animals
 POST: api/animals
@@ -34,7 +35,7 @@ Code Block from Postman
     
 ]```
 
-# JWT documention
+## JWT documention
 JWT was used for further exploration of this project.
 How it works: 
 1. Client logs in with his/her credentials.
