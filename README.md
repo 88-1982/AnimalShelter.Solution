@@ -36,7 +36,7 @@ Code Block from Postman
 ]```
 
 ## JWT documention
-JWT was used for further exploration of this project.
+JWT was used for this project.
 How it works: 
 1. Client logs in with his/her credentials.
 2. Server generates a Jwt token at server side. 
