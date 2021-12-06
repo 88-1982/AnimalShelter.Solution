@@ -19,6 +19,8 @@ GET: api/Animals
 POST: api/animals
 GET: api/Animals/1{id}
 PUT: api/Animals/1{id}
+DELETE: api/Animals/5
+
 Code Block from Postman
 ```[
     {
@@ -31,6 +33,17 @@ Code Block from Postman
     },
     
 ]```
+
+# JWT documention
+JWT was used for further exploration of this project.
+How it works: 
+1. Client logs in with his/her credentials.
+2. Server generates a Jwt token at server side. 
+3. After token generation, the server returns a token in response.
+4. Now, the client sends a copy of the token to validate the token. 
+5. The server checks JWT token to see if it's valid or not.
+6. After the token is validated, the server sends a status message to the client.
+
 ## Technologies Used
 C#
 MySql
@@ -40,6 +53,7 @@ Entity Framework
 MVC
 CSS/HTML
 Identity
+
 ## License
 
 Copyright (c) 2021 DeAunte Hall
